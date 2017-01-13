@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sendsms.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.18896321070234115" layoutX="83.0" layoutY="55.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="textNumero" layoutX="14.0" layoutY="25.0" promptText="Número" />
+                  <TextField fx:id="textOrden" layoutX="199.0" layoutY="25.0" promptText="Orden" />
+                  <ComboBox fx:id="listSMS" layoutX="14.0" layoutY="60.0" prefWidth="150.0" promptText="Mensaje" />
+                  <Button fx:id="btnEnviar" layoutX="199.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#handleEnviar" text="Enviar" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextArea fx:id="textMessage" layoutX="99.0" layoutY="38.0" prefHeight="279.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
